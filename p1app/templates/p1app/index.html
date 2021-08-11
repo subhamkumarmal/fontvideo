@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'p1app/css/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<header>
+    <nav>
+       <div>
+         <h3><span id="s">S</span>kmcomtech</h3>
+       </div>
+        <div>
+            <a href="">home</a>
+            <a href="">contach</a>
+            <a href="">info</a>
+            <a class="icons" href="#"><i id="faid" class="fa fa-search"></i></a>
+        </div>
+
+    </nav>
+    <div id="inputarea" class="textnon">
+         <input id="mainsearch" class="search" type="search" name="search" placeholder="search">
+    </div>
+    <div>
+        <div class="paragraph">
+            <pre>Welcome To The Nature's World
+Out Nature Is Our Mother And Its Our Responsiblity to Save It.</pre>
+
+
+    <div class="controls">
+        <span id="id1" class="vid-btn active" data-src="{% static 'p1app/videos/video1.mp4' %}"></span>
+        <span id="id2" class="vid-btn " data-src="{% static 'p1app/videos/video2.mp4' %}"></span>
+        <span id="id3" class="vid-btn " data-src="{% static 'p1app/videos/video3.mp4' %}"></span>
+        <span id="id4" class="vid-btn " data-src="{% static 'p1app/videos/video4.mp4' %}"></span>
+
+ </div>
+              </div>
+    </div>
+
+
+<div class="video-container" >
+    <video class="videoarea" src="{% static 'p1app/videos/video1.mp4' %}" autoplay loop></video>
+</div>
+</header>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="{% static 'p1app/js/index.js' %}"></script>
+</html>
